@@ -15,3 +15,17 @@ Dieser enthält Übungsaufgaben und das Unterrichtsmaterial, dass verwendet wurd
 Für die Rätsel muss jeder Teilnehmer ein *eigenes*, privates Repository erstellen.
 Anschließend muss man mich dort als "Contributor" einladen.
 Gelöste Rätsel geben Bonuspunkte auf die Gesamtnote.
+
+## AI-Infos
+Image Generation via Text Input:
+1. DALL-E           https://openai.com/dall-e-2/
+2. MidJourney       https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F
+3. StableDiffusion  https://stablediffusionweb.com/#demo
+
+Natural Language Models:
+1. ChatGPT          https://openai.com/blog/chatgpt/
+2. Bings New Search https://www.bing.com/
+
+How Neural Networks work:
+1. https://playground.tensorflow.org/
+2. https://teachablemachine.withgoogle.com/
