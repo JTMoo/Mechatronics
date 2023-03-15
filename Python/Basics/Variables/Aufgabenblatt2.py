@@ -6,6 +6,5 @@
 # | Info zu Aufgaben 1-3:                                                                       |
 # | - Alle Ergebnisse mit einem print ausgeben                                                  |
 # | - Es muss eine ausführbare Datei erstellt werden, die immer die gleichen Ergebnisse liefert |
-# | - Für Aufgabe 3 müssen Vergleichsoperatoren ('<', '>' oder '==') verwendet werden           |
-# |   Diese sind in der gleichnamigen Datei mit dieser Datei dokumentiert                       |
+# | - Für Aufgabe 3 müssen Vergleichsoperatoren ('<', '>' oder '==') verwendet werden.          |
 # |---------------------------------------------------------------------------------------------|
