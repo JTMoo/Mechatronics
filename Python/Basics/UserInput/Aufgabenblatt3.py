@@ -5,6 +5,7 @@
 # |-------------------------------------------------------------|
 
 # 2 Modifiziere die dritte Aufgabe in Aufgabenblatt2 so, dass die Anzahl der Steine als Benutzereingabe definiert ist.
+#   Bestimme die Anzahl der Steine, bei dem der schnellere Arbeiter wechselt.
 
 # 3 Verwende eine Benutzereingabe, um eine Division durchzuführen.
 # 3.1 Muss die Benutzereingabe kontrolliert werden? Wenn ja, warum?
