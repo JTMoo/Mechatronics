@@ -1,6 +1,8 @@
 # Mechatronics
 Enthaelt Unterrichtsmaterial fuer den ML_KI-Kurs an am Colegio Filadelfia
 
+Wichtigstes File: Python\Basics\How_Python_Works.py
+
 ## Wie funktioniert der Zugriff?
 Jeder Teilnehmer wird zuerst als "Contributer" hinzugefügt.
 Jeder Teilnehmer des Kurses hat die Moeglichkeit das Repository zuhause (oder sonst irgendwo) zu clonen.
