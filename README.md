@@ -1,7 +1,7 @@
 # Mechatronics
 Enthaelt Unterrichtsmaterial fuer den ML_KI-Kurs an am Colegio Filadelfia
 
-Wichtigstes File: Python\Basics\How_Python_Works.py
+Wichtigstes File: *Python\Basics\How_Python_Works.py*
 
 ## Wie funktioniert der Zugriff?
 Jeder Teilnehmer wird zuerst als "Contributer" hinzugefügt.
