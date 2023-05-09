@@ -1,3 +1,4 @@
+# Copy-Paste von https://www.geeksforgeeks.org/python-image-classification-using-keras/
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D
