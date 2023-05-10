@@ -8,8 +8,10 @@ import numpy as np
 
 from keras.models import load_model
 
+# Laden der zuvor gespeicherten Gewichte des Neuronalen Netzes
 model = load_model('model_saved.h5')
 
+# "Echtes" Bild laden und klassifizieren lassen
 image = load_img('v_data/test/planes/5.jpg', target_size=(224, 224))
 img = np.array(image)
 img = img / 255.0
