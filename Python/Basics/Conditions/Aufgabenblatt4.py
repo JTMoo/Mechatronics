@@ -9,5 +9,5 @@ print(div)
 # 2 Schreibe ein Programm, dass eine (beliebige) Frage ausgibt und dann eine Antwort des Benutzers abwartet.
 #   Pruefe mihilfe einer Bedingung danach, ob die Frage richtig oder falsch beantwortet wurde und informiere den Benutzer mit der print-Funktion darueber.
 
-# 3 Verbessere die Ausgabe des schnelleren Arbeiters aus der 3. Aufgabe in Aufgabenblatt2 (die Aufgabenblatt 3 Aufgabe 2 weiter angepasst wurde).
+# 3 Verbessere die Ausgabe des schnelleren Arbeiters aus der 3. Aufgabe in Aufgabenblatt2 (die in Aufgabenblatt 3 Aufgabe 2 weiter angepasst wurde).
 #   Verwende eine Bedingung, um unterschiedliche Ausgaben (print) im "Wenn" (if) und "Sonst" (else) Fall auszugeben.
