@@ -5,7 +5,7 @@ if numberToCheck > 1:
 		if (numberToCheck % i) == 0:
 			print(numberToCheck, "ist keine Primzahl")
 			break
-		else:
-			print(numberToCheck, "ist eine Primzahl")
+	else:
+		print(numberToCheck, "ist eine Primzahl")
 else:
 	print(numberToCheck, "ist keine Primzahl")
