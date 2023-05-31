@@ -6,5 +6,7 @@
 #   Rueckgabeparameter der Funktion soll ein bool sein. (True oder False)
 
 # 3 Schreibe eine Funktion in einem neuen Programm (neue Datei), die den Rueckgabeparameter der input-Funktion immer in einen int umwandelt.
-#   Nenne diese Funktion "input_int". (import Dateiname)
+#   Nenne diese Funktion "input_int".
+#   Das verwenden dieser Datei in einem anderem Programm mittels "import Dateiname" am Anfang der Datei. (Achtung: Dateiname ist ein Platzhalter und muss durch den tatsaechlichen Namen der Datei ersetzt werden)
+#   Anschliessend kann ein Aufruf der Funktion ueber "Dateiname.Funktionsname" stattfinden.
 #   Teste diese Funktion in dem Programm, in dem du Aufgabe 1 und 2 geloest hast. (D.h. die Funktion einmal ausfuehren)
