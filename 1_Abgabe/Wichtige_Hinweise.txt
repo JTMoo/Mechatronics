@@ -1,0 +1,9 @@
+Punkte für Aufgabenblätter:
+
+1. Gesamtes Aufgabenblatt ist ohne Fehler ausführbar
+2. Jede Aufgabe gibt maximal 3 Punkte für folgende Kriterien:
+  2.1 Ausgabe in Kommandozeile entspricht Aufgabenstellung
+  2.2 Code entspricht Aufgabenstellung
+  2.3 Gute Leserlichkeit des Codes (Gute Variablen- und Funktionsbenennung, sowie gute Code-Struktur)
+3. Ein Bonuspunkt pro Aufgabenblatt, wenn eine kreative Lösung gefunden wurde.
+
