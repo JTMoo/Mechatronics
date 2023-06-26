@@ -1,0 +1,54 @@
+import Dateiname
+
+# 1 Schreibe eine Funktion (Mit dem Namen add), die zwei Zahlen als Übergabeparameter hat. Die Funktion soll diese beiden Zahlen addieren und dann das Ergebnis zurückgeben.
+#   Verwende diese Funktion in einem Programm, dass zwei Zahlen einliesst (input), diese Zahlen der Funktion (add) übergibt und anschliessend das Ergebnis ausgibt (print).
+
+a = int(input("Gib eine Zahl ein: "))
+b = int(input("Gib eine zweite Zahl ein: "))
+def add(a,b):
+    c = (int(a) + int(b))
+    return c
+c = add(a,b)
+print(c)
+
+# 2 Schreibe eine Funktion, die eine Zahl als Übergabeparameter hat. Überprüfe in der Funktion, ob die Zahl eine Primzahl ist. (Inhalt der Funktion ist in Primzahlen.py-Datei)
+#   Kopiere das Programm von Aufgabenblatt5-Aufgabe2 und schreibe es mit deiner neuen Funktion um.
+#   Rückgabeparameter der Funktion soll ein bool sein. (True oder False)
+
+numberToCheck = int(input("Gib eine Zahl ein: "))
+
+def überprüfe_Primzahl(numberToCheck):
+	if numberToCheck > 1:
+		for i in range(2, int(numberToCheck / 2) + 1):
+			if (numberToCheck % i) == 0:
+				return False
+				break
+		else:
+			return True
+	else:
+		return False
+
+überprüfe_Primzahl(numberToCheck)
+zahl = numberToCheck
+Ergebnis = überprüfe_Primzahl(zahl)
+if Ergebnis:
+	print("Die Zahl " + str(zahl) + " ist eine Primzahl!")
+else:
+	print("Die Zahl " + str(zahl) + " ist keine Primzahl!")
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------notes
+#def add(a):
+#	return a / 10
+#import (Name der Datei)
+#x = 100
+#ergebnis = helper.add(x)
+#print(ergebnis)
+
+# 3 Schreibe eine Funktion in einem neuen Programm (neue Datei), die den Rückgabeparameter der input-Funktion immer in einen int umwandelt.
+#   Nenne diese Funktion "input_int".
+#   Das verwenden dieser Datei in einem anderem Programm mittels "import Dateiname" am Anfang der Datei. (Achtung: Dateiname ist ein Platzhalter und muss durch den tatsächlichen Namen der Datei ersetzt werden)
+#   Anschliessend kann ein Aufruf der Funktion über "Dateiname.Funktionsname" stattfinden.
+#   Teste diese Funktion in dem Programm, in dem du Aufgabe 1 und 2 gelöst hast. (D.h. die Funktion einmal ausführen)
+
+a = Dateiname.input_int()
+print(a)
