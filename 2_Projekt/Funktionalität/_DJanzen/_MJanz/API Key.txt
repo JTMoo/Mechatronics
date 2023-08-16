@@ -1,3 +1,0 @@
-https://www.visualcrossing.com/weather/weather-data-services/Filadelfia%20Boquerón?v=api
-
-Der Key ist in der URL in der Website.
