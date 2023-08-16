@@ -1,4 +1,4 @@
-1. Recherchieren
+# Recherchieren
    - Algorithmen
    - Algorithmen fuer die Wettervorhersage
    - Machine Learning Algorithmen
@@ -6,7 +6,7 @@
 
 Ergebnis: 1 Algorithmen
 
-2. Historische Daten
+# Historische Daten
    - Welche Daten relevant?
      - weltweite Daten
      - paraguayische Daten
@@ -15,8 +15,8 @@ Ergebnis: 1 Algorithmen
      - Training  (weltweite Daten)
      - Test      (chaco spezifische Daten)
 
-3. Aktuelle Daten
+# Aktuelle Daten
    - Wie bekommen wir aktuelle Daten fuer den Chaco?
    - Web Scraping? Frequenz?
 
-4. Merge mit Applikation
+# Merge mit Applikation
