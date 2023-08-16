@@ -11,3 +11,4 @@ Ergebnis: 1 Framework
 # Design der Applikation
 - Anpassung am Aussehen der Applikation
 - Einfuegen von Icons (Sonne, Wolken etc.)
+- Idee fuer Design anhand der Microsoft-Wetterapp (siehe Bild in diesem Ordner)
