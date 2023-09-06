@@ -1,0 +1,166 @@
+# Import Libraries
+import customtkinter as ctk
+from tkinter import StringVar
+from PIL import Image
+import datetime as dt
+import os
+
+# Import Custom Modules
+from weather_info import Weather
+
+class App(ctk.CTk):
+    
+    #---- MAIN WINDOW CONFIGURATION ----
+    def __init__(self: ctk):
+        
+        # Inheriting Methods from [ctk.CTk] module
+        super().__init__()
+        
+        # Main Configuration of Window/Root
+        self._set_appearance_mode('dark')
+        self.title('My Weather Application')
+        self.width, self.height = 2000, 1100
+        self.geometry(f'{self.width}x{self.height}')
+        self.resizable(True, True)
+        self.background_img()
+        
+        # Weather Class
+        self.weather = Weather()
+        
+        # Content of the App
+        self.create_widgets()
+
+    #----- BACKGROUND IMAGE ----
+    def background_img(self):
+        # Set image file path
+        abs_path = os.path.abspath(__file__)
+        path = os.path.join(os.path.split(abs_path)[0], 'images/background_weather.jpg')
+        ctk_img = ctk.CTkImage(Image.open(path), size=(self.width, self.height))
+        
+        # Create the widget and Position it
+        bg_img_label = ctk.CTkLabel(master=self, text=" ", image=ctk_img)
+        bg_img_label.grid(column=0, row=0, columnspan=2, rowspan=6)
+        return bg_img_label
+    
+    #----- APP CONTENT / WIDGETS ----
+    def create_widgets(self):
+        self.columnconfigure(index=0, weight=1)
+        bg_color = 'transparent'
+        
+        # Search Bar [str]
+        btn_width = 1000
+        btn_height = 50
+        self.entry = ctk.CTkEntry(master=self, 
+                                  placeholder_text=' Write the city you wanna search...', 
+                                  width=btn_width, 
+                                  height=btn_height)
+        self.entry.grid(column=0, row=0)
+        
+        # Button
+        btn_width1=100
+        btn_height1=50
+        self.button = ctk.CTkButton(master=self,
+                                    text='SEARCH',
+                                    width=btn_width1, 
+                                    height=btn_height1,
+                                    command=lambda: self.search_city())
+        self.button.grid(column=1, row=0)
+
+        # City [str]
+        self.city = "Filadelfia" #StringVar(value = self.weather.get_weather_value()["city"])
+        city_label = ctk.CTkLabel(master=self,
+                                  #textvariable=self.city,
+                                  text="Filadelfia",
+                                  bg_color=bg_color,
+                                  text_color='#fff',
+                                  font=self.custom_heading(0))
+        city_label.grid(column=0, row=1,
+                        ipadx=15, ipady=10,
+                        columnspan=2)
+        
+        # Country [str]
+        self.country = "Paraguay" #StringVar(value = self.weather.get_weather_value()["country"])
+        country_label = ctk.CTkLabel(master=self,
+                                     #textvariable=self.country,
+                                     text="Paraguay",
+                                     bg_color=bg_color,
+                                     text_color='#fff',
+                                     height=0,
+                                     font=self.custom_heading(1))
+        country_label.grid(column=0, row=2,
+                           ipadx=7, ipady=7,
+                           columnspan=2)
+        
+        # Date [dict{ [key]: [value] }]
+        datetime = dt.datetime.now()
+        weekday = dt.date.strftime(datetime, '%A')
+        number = dt.date.strftime(datetime, '%d')
+        month = dt.date.strftime(datetime, '%B')
+        year = dt.date.strftime(datetime, '%Y')
+        phrase = f'{weekday}, {month} {number}, {year}'
+        
+        date_label = ctk.CTkLabel(master=self,
+                                  text=phrase,
+                                  bg_color=bg_color,
+                                  text_color='#fff',
+                                  height=0,
+                                  font=self.custom_heading(2))
+        date_label.grid(column=0, row=3,
+                        ipadx=5, ipady=5,
+                        columnspan=2)
+        
+        # Weather Value [18°C, 64°F, 291K] ---- [dict{ [key]: [value] }]
+        self.temperature = 36 #StringVar(value = self.weather.get_weather_value()["temperature"]) #----> Later this value will be changing dinamically
+        weather_value_label = ctk.CTkLabel(master=self,
+                                           #textvariable=self.temperature,
+                                           text="Probability of rain",
+                                           bg_color=bg_color,
+                                           text_color='#009ca9',
+                                           font=self.custom_heading(3))
+        weather_value_label.grid(column=0, row=4,
+                                 ipadx=15, ipady=15,
+                                 columnspan=2)
+        
+        # Weather State [sunny, cloudy, rainy] ---- [str]
+        self.condition = "sonnig" #StringVar(value = self.weather.get_weather_value()["condition"])
+        condition_value = ctk.CTkLabel(master=self,
+                                       textvariable=self.condition,
+                                       bg_color=bg_color,
+                                       text_color='#fff',
+                                       font=self.custom_heading(1))
+        condition_value.grid(column=0, row=5,
+                             ipadx=7, ipady=7,
+                             columnspan=2)
+
+    #----- APP CONTENT / FUNCTIONALITY ----
+    def search_city(self):
+        entry = self.entry
+        
+        entry_value = entry.get()
+        last_index = len(entry_value)
+        
+        self.weather.set_city(entry_value)
+        #self.city.set(self.weather.get_weather_value()["city"])
+        #self.country.set(self.weather.get_weather_value()["country"])
+        #self.temperature.set(self.weather.get_weather_value()["temperature"])
+        #self.condition.set(self.weather.get_weather_value()["condition"])
+        
+        entry.delete(0, last_index)
+
+    #----- CUSTOM FONTS ----
+    @staticmethod
+    def custom_heading(index: int) -> ctk.CTkFont:
+        font_family = 'Times New Roman'
+        
+        # HEADING FOR ----> City Label
+        if index == 0: return ctk.CTkFont(family=font_family, size=-35, weight='bold', slant='italic')
+        # HEADING FOR ----> Country, Weather State
+        elif index == 1: return ctk.CTkFont(family=font_family, size=-27, slant='italic')
+        # HEADING FOR ----> Date
+        elif index == 2: return ctk.CTkFont(family=font_family, size=20)
+        # HEADING FOR ----> Weather Value
+        elif index == 3: return ctk.CTkFont(family=font_family, size=60, weight='bold')
+        
+if __name__ == '__main__':
+    app = App()
+    app.mainloop()
