@@ -1,27 +1,25 @@
 import pandas as pd
 from sklearn import svm
 
-# Laden Sie Ihre Daten in ein DataFrame
-data = pd.read_csv('path/to/your/data.csv')
+# Einlesen der historischen Daten
+data = pd.read_csv(r'\\WS2K19STD\perfiles$\daniel.janzen\Downloads\historical_weather.csv')
 
-# Extrahieren Sie die Features und Labels aus den Daten
-X = data[['feature1', 'feature2', ...]]
-y = data[0]
+# alle zeilen auslöschen die ein NaN beinhalten
+data = data.dropna(how='any')
 
-# Erstellen Sie einen SVM-Klassifikator
+# Zuordnung zu Features und Labels - Resultat: x enthaelt alle Wetterdaten /// y enthaelt alle Zeiten
+x = data[['temperature_2m (°C)', 'relativehumidity_2m (%)', 'rain (mm)', 'surface_pressure (hPa)', 'cloudcover (%)', 'windspeed_100m (km/h)', 'winddirection_10m (°)']]
+y = data['time']
+
+# Initialisiern des Klassifikators
 clf = svm.SVC()
 
-# Trainieren Sie den Klassifikator mit Ihren Daten
-clf.fit(X, y)
+# Trainieren des Klassifikators (fit = anpassen = Einstellen der Gewichte der KI)
+clf.fit(x,y)
 
-# Verwenden Sie den Klassifikator, um Vorhersagen für neue Daten zu treffen
-y_pred = clf.predict([[new_feature1, new_feature2, ...]])
+# aktulles daten aus der Api auslesen (get funktion)
 
-import pandas as pd
+# Vorhersage treffen mithilfe der uebergebenen Daten clf.predict(uebergebene_Daten) - Gleiche Struktur wie Daten in x, also Temperatur, Luffeuchtigkeit ...
+y_pred = clf.predict(x)
 
-# Laden Sie Ihre Daten in ein DataFrame
-data = pd.read_csv('path/to/your/data.csv')
-
-# Extrahieren Sie die Features und Labels aus den Daten
-X = data[['temperature_2m (°C)', 'relativehumidity_2m (%)', 'rain (mm)', 'surface_pressure (hPa)', 'cloudcover (%)', 'windspeed_100m (km/h)', 'winddirection_10m (°)']]
-y = data['time']
+# predict anpassen wetterdaten vorhergesagt werden
