@@ -5,5 +5,5 @@
 
 Aufgaben zum Programm:
 1. Inhalt des Textfelds "Domain" soll bestehen bleiben, auch wenn das Fenster geschlossen wird
-2. Aufteilung des Programmes im Fenster "schöner" gestalten
+2. Aufteilung des Programmes im Fenster "schöner" gestalten (Tutorial fuer Tkinter)
 3. Inhalt aus dem HTML auslesen, dass in Text-Box dargestellt wird (Tutorial fuer BeautifulSoup4)
