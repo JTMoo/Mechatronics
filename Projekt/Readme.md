@@ -5,6 +5,9 @@ Dafuer soll folgendes verwendet werden:
 3. Messenger (lokal / auf einem Server gehostet oder vorhanden, wie beispielsweise Whatsapp)
 4. Verknuepfen des Messengers mit der KI, meistens ueber eine sogenannte API
 
+Was ist ein LLM:
+https://www.iese.fraunhofer.de/blog/wie-funktionieren-llms/
 Vorschlaege zu den LLMs:
 https://www.datacamp.com/blog/top-open-source-llms
- 
+Vorschlaege zur Webintegration eines Chats in Website:
+https://dev.to/documatic/build-a-chatbot-using-python-django-46hb
