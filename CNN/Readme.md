@@ -4,4 +4,6 @@ TODO: Hier Artikel verlinken.
 ![Neuronales Netz](https://github.com/JTMoo/Mechatronics/blob/main/CNN/image.png?raw=true)
 
 # Autoencoder + LLMs (Large Language Models) + NLP (Natural Language Processing)
-TODO: Fuer naechste Unterrichtsstunde vorbereiten (14.08.2024)
+
+## Aufbau eines Autoencoders:
+
