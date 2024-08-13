@@ -16,4 +16,15 @@ Unter anderem können die Vorteile der PCA (Principal Component Analysis) genutz
 
 ### Positionsdaten bei Transformatoren
 
-PEpos,2i​\=sin(100002i/dmodel​pos​) PEpos,2i+1\=cos⁡(pos100002i/dmodel)PE\_{pos, 2i+1} = \\cos\\left(\\frac{pos}{10000^{2i/d\_{\\text{model}}}}\\right)PEpos,2i+1​\=cos(100002i/dmodel​pos​)
+PE_pos,2i​ = sin(pos / (10000^(2i/d_model​))​)
+PE_pos,2i+1 = cos⁡(pos / (10000^(2i/d_model)))
+
+Wobei i die aktuelle Dimension beschreibt und d_model die Anzahl der Dimensionen, um die Objekte zu beschreiben, auf die die KI trainiert ist.
+Dimensionen sind in diesem Kontext Faktoren, die die Objekte beschreiben.
+Ein konkretes Beispiel: Wenn Tische die Objekte sind, dann sind Größe, Gewicht, Anzahl Beine, Farbe, Material etc. die Faktoren, die man nutzen kann, um das Objekt zu beschreiben.
+
+Die Positionsdaten sind deshalb wichtig, da daraus zusätzliche Informationen gewonnen werden können, die der KI helfen eine genauere Vorhersage zu treffen.
+Bezogen auf ein LLM bedeutet das: Welches Wort/Buchstabe kommt wahrscheinlich als nächstes in einem gewissen Satz oder Wort.
+
+### Natural Language Processing
+Die Wissenschaft um die Erfassung und Wiedergabe der natürlichen Sprache. Mehr dazu in einem anderen Unterricht.
