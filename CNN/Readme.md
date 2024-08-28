@@ -1,7 +1,7 @@
 # Was ist eigentlich KI?
 TODO: Hier Artikel verlinken.
 # Aufbau eines Neuronalen Netzes:
-![Neuronales Netz](https://github.com/JTMoo/Mechatronics/blob/main/CNN/image.png?raw=true)
+![Neuronales Netz](https://github.com/JTMoo/Mechatronics/blob/main/CNN/neural_network.png?raw=true)
 
 # Autoencoder + LLMs (Large Language Models) + NLP (Natural Language Processing)
 
