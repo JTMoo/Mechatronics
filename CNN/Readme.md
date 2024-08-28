@@ -28,3 +28,6 @@ Bezogen auf ein LLM bedeutet das: Welches Wort/Buchstabe kommt wahrscheinlich al
 
 ### Natural Language Processing
 Die Wissenschaft um die Erfassung und Wiedergabe der natürlichen Sprache. Mehr dazu in einem anderen Unterricht.
+
+
+Das ist eine Aenderung
