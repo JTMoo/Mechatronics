@@ -5,6 +5,9 @@ TODO: Hier Artikel verlinken.
 
 # Autoencoder + LLMs (Large Language Models) + NLP (Natural Language Processing)
 
+#### Visualisierung eines CNN (Convolutional Neural Network)
+https://www.youtube.com/watch?v=3JQ3hYko51Y&t=0s
+
 ## Aufbau eines Autoencoders:
 ![Autoencoder](https://github.com/JTMoo/Mechatronics/blob/main/CNN/autoencoder_architecture.png?raw=true)
 
