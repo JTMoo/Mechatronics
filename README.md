@@ -29,6 +29,7 @@ Image Generation via Text Input:
 Natural Language Models:
 1. ChatGPT          https://openai.com/blog/chatgpt/
 2. Bings New Search https://www.bing.com/
+3. Duck AI          https://duck.ai
 
 How Neural Networks work:
 1. https://playground.tensorflow.org/
